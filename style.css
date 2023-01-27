@@ -1,0 +1,560 @@
+/*Start of styling all the HTML*/
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0;
+}
+
+*::selection {
+    background-color: #90EE90;
+}
+
+/*End of styling all the HTML*/
+
+/*Start of styling the Container*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*End of styling the Container*/
+
+/*Start of styling the Header*/
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgImg {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/background.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info_and_pic {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background: #94a894;
+    box-shadow: 41px 41px 82px #000,
+        -41px -41px 82px #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 5px solid #f1f1f1;
+    height: 50vh;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute
+}
+
+.name {
+    font-size: 64px;
+    text-stroke: 1px #D3FBD8;
+    -webkit-text-stroke: 1px #D3FBD8;
+    -moz-text-stroke: 1px #D3FBD8;
+    -ms-text-stroke: 1px #D3FBD8;
+    -o-text-stroke: 1px #D3FBD8;
+}
+
+.discription {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contactInfo {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.contactInfo span a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contactInfo span:hover,
+.contactInfo span a:hover {
+    color: #1da1f2;
+}
+
+.downloadcv {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: limegreen;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.downloadcv:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.profilPic img {
+    width: 450px;
+    height: 450px;
+}
+
+/*End of styling the Header*/
+
+/*Start of styling the Content*/
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Start of styling the About*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.aboutTitle,
+.skillTitle,
+.experiencetitle {
+    font-size: 70px;
+    text-align-last: center;
+    color: #233474;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutPic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    flex: 1;
+}
+
+.aboutParagraph {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    flex: 1;
+    padding-right: 150px;
+    font-size: 30px;
+    text-align: end;
+}
+
+/*End of styling the About*/
+
+/*Start of styling the Skill*/
+
+.divSkillContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.divSkill {
+    width: 100%;
+    background-color: #454655;
+}
+
+.skillTitle {
+    color: white;
+}
+
+.allSkill {
+    display: flex;
+    width: 100%;
+}
+
+.row1 h3,
+.row2 h3 {
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+}
+
+.row2 .column1 h3 {
+    font-weight: 700;
+}
+
+.row1,
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%
+}
+
+.column1,
+.column2 {
+    margin-top: 20px;
+}
+
+
+.column1 p,
+.column2 p {
+    display: flex;
+    color: #E3E0F3;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/*End of styling the Skill*/
+
+/*Start of styling the Experiance*/
+
+.experiance {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.experiancelist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.experiance1,
+.experiance2 {
+    box-shadow: 4px -5px 29px 1px rgba(26, 117, 255, 0.32);
+    border-radius: 10px;
+    align-items: flex-start;
+    padding: 16px 14px 30px 20px;
+    flex: 1;
+    min-width: 427px;
+    max-width: 427px;
+    min-height: 417px;
+    margin-bottom: 50px;
+}
+
+.experiance2 {
+    background: #6988F9;
+    color: white;
+}
+
+.experiance1 img,
+.experiance2 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 75px 0 20px 0;
+}
+
+.experiance1:hover,
+.experiance2:hover {
+    background-color: #6988F9;
+    color: white;
+    box-shadow: 10px -10px 35px 10px rgba(26, 117, 255, 0.5);
+    transform: scale(1.2)
+}
+
+.experiance2:hover {
+    background-color: #FFF;
+    color: black;
+}
+
+.companyName {
+    margin: 5px 0px 20px 0;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.openModal,
+.openModal2,
+.openModal3 {
+    border: none;
+    color: blue;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/*Start of styling the ContactMe*/
+.contactMeForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.chipPic {
+    transform: scale(2.2);
+    position: absolute;
+    top: 0%;
+    left: 6%;
+    filter: invert(50%);
+    position: absolute;
+    z-index: -2;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline black;
+    text-stroke: 1px #D3FBD8;
+    -webkit-text-stroke: 1px #D3FBD8;
+    -moz-text-stroke: 1px #D3FBD8;
+    -ms-text-stroke: 1px #D3FBD8;
+    -o-text-stroke: 1px #D3FBD8;
+}
+
+.form {
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 19px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 50px 50px 61px #bebebe,
+        -50px -50px 61px #ffffff;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    position: relative;
+}
+
+.btnSubmit {
+    margin: 20px 50% 20px 45%;
+    width: 100px;
+    border-radius: 11px;
+    background: #32CD32;
+    box-shadow: inset 23px 23px 48px #208120,
+        inset -23px -23px 48px #45ff45;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+/*    left: 200px;*/
+    letter-spacing: 1px;
+}
+
+.btnSubmit:hover {
+    border-radius: 11px;
+    background: #006400;
+    box-shadow: inset 23px 23px 48px #003f00,
+        inset -23px -23px 48px #008900;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input,
+textarea {
+    border: solid 1px #000;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rebeccapurple;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 10px auto;
+    width: 600px;
+    height: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: black;
+    pointer-events: none;
+    transform: translateY(1rem);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1.5px solid #1A73E8;
+    background-color: #DCEAFF
+}
+
+textarea ~ label,
+input ~ label {
+    transform: translateY(-50%) scale(0.8);
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    background: linear-gradient(90deg, #cacaca, #f0f0f0);
+    border: 1px black solid;
+    border-radius: 12px;
+    padding: 0 0.2em;
+    color: black;
+}
+
+/*End of styling the ContactMe*/
+
+/*End of styling the Experiance*/
+
+/*End of styling the Content*/
+
+/*Start of styling the Footer*/
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-color: #454655;
+    margin: 0px;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footerName {
+    width: 25%;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainContent {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.contact h2,  .personaleQualification h2 {
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.personaleQualification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footerName h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 30px
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.callcolor:hover {
+    color: #2F8D55;
+    padding: 2px;
+    box-shadow: 4px -5px 29px 1px rgba(47, 141, 85, 0.32);
+}
+
+.twittercolor:hover {
+    color: #1DA1F2;
+    padding: 10px;
+    box-shadow: 4px -5px 29px 1px rgba(29, 161, 242, 0.32);
+}
+
+.telegramcolor:hover {
+    color: #249CD7;
+    padding: 10px;
+    box-shadow: 4px -5px 29px 1px rgba(36, 156, 215, 0.32)
+    rgba(36, 156, 215, 1);
+}
+
+.linkedincolor:hover {
+    color: #0961B8;
+    padding: 10px;
+    box-shadow: 4px -5px 29px 1px rgba(9, 97, 184, 0.32)
+    rgba(9, 97, 184, 1)
+}
+
+.personaleQualification li:hover {
+    color: #249CD7;
+    padding: 10px;
+    box-shadow: 4px -5px 29px 1px rgba(36, 156, 215, 0.32);
+/*    rgba(36, 156, 215, 1)*/
+}
+/*End of styling the Footer*/

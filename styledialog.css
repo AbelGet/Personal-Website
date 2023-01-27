@@ -1,0 +1,113 @@
+/*Start of styling the DialogBox*/
+dialog {
+    width: 90vw;
+    height: 90vh;
+    padding: 0px;
+    margin: auto;
+}
+
+.dialogContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.dialogCompanyName {    
+    background-color: #6988F9;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.dialogCompanyName img{
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+}
+
+.dialogCompanyName h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.companyInfo {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.closeButton {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#modal::backdrop, #modal2::backdrop, #modal3::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.closeButton button {
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer
+}
+
+.dialogAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+.dialogAbout h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.dialogAbout p, 
+.dialogAbout ul {
+    font-size: 22.5px;
+    list-style: square;
+}
+
+
+.dialog1[open],
+.dialog2[open],
+.dialog3[open] {
+    animation:
+        slid-up 600ms forwards,
+        fade-in 600ms forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slid-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+/*End of styling the DialogBox*/
